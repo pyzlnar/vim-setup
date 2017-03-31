@@ -1,0 +1,14 @@
+// Asciidoctor Source
+// Pyzlnar's Vim Setup
+//
+// Original author:
+// - Pyzlnar
+//
+// Notes:
+//  Compile with: $ asciidoctor README.adoc
+
+= Vim Setup
+[Easy setup for vim]
+:toc:
+:showtitle:
+
