@@ -15,6 +15,9 @@ fi
 echo Copying .vimrc
 cp .vimrc ~/
 
+echo Copying Schema Colors...
+cp -R colors ~/.vim
+
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
   echo Cloning Vundle...
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

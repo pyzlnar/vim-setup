@@ -33,6 +33,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'asciidoc/vim-asciidoc'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'isRuslan/vim-es6'
+Plugin 'mxw/vim-jsx'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
@@ -50,6 +51,8 @@ set ruler
 set t_Co=256
 " Highlight search
 set hlsearch
+" Preferred color scheme
+colorscheme pyzlnar
 
 " -----
 " Files
@@ -77,7 +80,7 @@ set autoindent
 " start  # Allows to delete from $
 " eol    # Allows to delete from 0 to the previous line
 set backspace=start
-" Enable regex magic
+" Enable regex magicness
 set magic
 
 " -------
@@ -103,3 +106,10 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" -------------
+" Plugin Config
+" -------------
+
+" Add jsx highlight to .js files
+let g:jsx_ext_required = 0
