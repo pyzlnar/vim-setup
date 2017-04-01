@@ -22,7 +22,7 @@ let g:colors_name="pyzlnar"
 " --------------------------------
 hi Normal          ctermfg=007     ctermbg=none   cterm=none
 hi Cursor          ctermfg=none    ctermbg=red    cterm=none
-hi CursorLine      ctermfg=none    ctermbg=red    cterm=none
+hi CursorLine      ctermfg=none    ctermbg=none   cterm=underline
 hi LineNr          ctermfg=002     ctermbg=none   cterm=none
 hi CursorLineNR    ctermfg=none    ctermbg=red    cterm=none
 
@@ -30,9 +30,9 @@ hi CursorLineNR    ctermfg=none    ctermbg=red    cterm=none
 " - Number column -
 " -----------------
 hi CursorColumn    ctermfg=none    ctermbg=red    cterm=none
-hi FoldColumn      ctermfg=none    ctermbg=red    cterm=none
-hi SignColumn      ctermfg=none    ctermbg=red    cterm=none
-hi Folded          ctermfg=none    ctermbg=red    cterm=none
+hi FoldColumn      ctermfg=002     ctermbg=none   cterm=none
+hi SignColumn      ctermfg=002     ctermbg=none   cterm=none
+hi Folded          ctermfg=002     ctermbg=none   cterm=none
 
 " -------------------------
 " - Window/Tab delimiters -
@@ -72,9 +72,9 @@ hi NonText         ctermfg=002     ctermbg=none   cterm=none
 hi Todo            ctermfg=008     ctermbg=012    cterm=bold
 hi Underlined      ctermfg=none    ctermbg=red    cterm=none
 hi Error           ctermfg=none    ctermbg=red    cterm=none
-hi ErrorMsg        ctermfg=none    ctermbg=blue   cterm=none
+hi ErrorMsg        ctermfg=001     ctermbg=none   cterm=none
 hi WarningMsg      ctermfg=none    ctermbg=red    cterm=none
-hi Ignore          ctermfg=none    ctermbg=red    cterm=none
+hi Ignore          ctermfg=243     ctermbg=none   cterm=none
 hi SpecialKey      ctermfg=none    ctermbg=red    cterm=none
 
 " --------------------------------
@@ -127,10 +127,10 @@ hi Typedef         ctermfg=none    ctermbg=red    cterm=none
 " --------------------------------
 " Diff
 " --------------------------------
-hi DiffAdd         ctermfg=none    ctermbg=red    cterm=none
-hi DiffChange      ctermfg=none    ctermbg=red    cterm=none
-hi DiffDelete      ctermfg=none    ctermbg=red    cterm=none
-hi DiffText        ctermfg=none    ctermbg=red    cterm=none
+hi DiffAdd         ctermfg=none    ctermbg=023    cterm=none
+hi DiffChange      ctermfg=none    ctermbg=none   cterm=none
+hi DiffDelete      ctermfg=001     ctermbg=none   cterm=none
+hi DiffText        ctermfg=none    ctermbg=023    cterm=none
 
 " --------------------------------
 " Completion menu
