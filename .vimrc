@@ -83,6 +83,10 @@ set autoindent
 set backspace=start
 " Enable regex magicness
 set magic
+" Use Return as :
+" Keep in mind this only works in normal mode, not when using plugins like
+" NERDTree or Fugitive
+nore <Return> :
 
 " -------
 " Commands
