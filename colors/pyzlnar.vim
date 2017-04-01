@@ -143,10 +143,10 @@ hi PmenuThumb      ctermfg=none    ctermbg=red    cterm=none
 " --------------------------------
 " Spelling
 " --------------------------------
-hi SpellBad        ctermfg=015     ctermbg=009    cterm=none
-hi SpellCap        ctermfg=none    ctermbg=red    cterm=none
-hi SpellLocal      ctermfg=none    ctermbg=red    cterm=none
-hi SpellRare       ctermfg=none    ctermbg=red    cterm=none
+hi SpellBad        ctermfg=015     ctermbg=001    cterm=none
+hi SpellCap        ctermfg=015     ctermbg=130    cterm=none
+hi SpellLocal      ctermfg=015     ctermbg=064    cterm=none
+hi SpellRare       ctermfg=015     ctermbg=063    cterm=none
 
 "--------------------------------------------------------------------
 " Specific settings                                                 |
