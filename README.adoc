@@ -12,3 +12,30 @@
 :toc:
 :showtitle:
 
+== Introduction
+
+This repo contains my vim settings with a script to set them up easily on any
+machine.
+
+I'm not exactly the most experienced vim user, so don't expect anything too
+fancy out of my vimrc.
+
+== Requirements
+
+- Git
+- Vim 7.4+
+
+== Installation
+
+1. Clone the Repo +
+`$ git clone https://github.com/pyzlnar/vim-setup.git`
+
+2. Change directory to the repo root +
+`$ cd vim-setup/`
+
+3. Run the setup +
+`$ sh setup.sh`
+
+4. ???
+
+5. Profit!
