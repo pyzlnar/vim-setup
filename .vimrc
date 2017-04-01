@@ -29,6 +29,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-syntastic/syntastic'
 " Highlighting
 Plugin 'asciidoc/vim-asciidoc'
 Plugin 'elixir-lang/vim-elixir'
@@ -113,3 +114,13 @@ map <C-l> <C-W>l
 
 " Add jsx highlight to .js files
 let g:jsx_ext_required = 0
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0

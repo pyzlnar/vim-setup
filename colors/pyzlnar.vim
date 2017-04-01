@@ -46,7 +46,7 @@ hi TabLineSel      ctermfg=002     ctermbg=none   cterm=bold
 " -------------------------------
 " - File Navigation / Searching -
 " -------------------------------
-hi Directory       ctermfg=none    ctermbg=red    cterm=none
+hi Directory       ctermfg=003     ctermbg=none   cterm=none
 hi Search          ctermfg=007     ctermbg=001    cterm=none
 hi IncSearch       ctermfg=none    ctermbg=red    cterm=none
 
@@ -71,9 +71,9 @@ hi NonText         ctermfg=002     ctermbg=none   cterm=none
 
 hi Todo            ctermfg=008     ctermbg=012    cterm=bold
 hi Underlined      ctermfg=none    ctermbg=red    cterm=none
-hi Error           ctermfg=none    ctermbg=red    cterm=none
+hi Error           ctermfg=001     ctermbg=none   cterm=none
 hi ErrorMsg        ctermfg=001     ctermbg=none   cterm=none
-hi WarningMsg      ctermfg=none    ctermbg=red    cterm=none
+hi WarningMsg      ctermfg=166     ctermbg=none   cterm=none
 hi Ignore          ctermfg=243     ctermbg=none   cterm=none
 hi SpecialKey      ctermfg=none    ctermbg=red    cterm=none
 
@@ -143,7 +143,7 @@ hi PmenuThumb      ctermfg=none    ctermbg=red    cterm=none
 " --------------------------------
 " Spelling
 " --------------------------------
-hi SpellBad        ctermfg=none    ctermbg=red    cterm=none
+hi SpellBad        ctermfg=015     ctermbg=009    cterm=none
 hi SpellCap        ctermfg=none    ctermbg=red    cterm=none
 hi SpellLocal      ctermfg=none    ctermbg=red    cterm=none
 hi SpellRare       ctermfg=none    ctermbg=red    cterm=none
