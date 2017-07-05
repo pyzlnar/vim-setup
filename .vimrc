@@ -48,6 +48,7 @@ call vundle#end()
 syntax on
 " Bottom right ruler
 set ruler
+set laststatus=0
 " Enable colors
 set t_Co=256
 " Highlight search
@@ -80,20 +81,32 @@ set autoindent
 " indent # Allows to bypass default indentation with backspace
 " start  # Allows to delete from $
 " eol    # Allows to delete from 0 to the previous line
-set backspace=start
-" Enable regex magicness
-set magic
+set backspace=start,indent,eol
 " Use Return as :
 " Keep in mind this only works in normal mode, not when using plugins like
 " NERDTree or Fugitive
 nore <Return> :
 
+" ------
+" Leader
+" ------
+
+let mapleader=','
+" Toggle line numbers
+nmap <silent> <leader>l  :set nu<CR>
+nmap <silent> <leader>ll :set nonu<CR>
+
+" Open NERDTree of current directory
+nmap <silent> <leader>t  :NERDTree %:p:h<CR>
+
+" Replace old symbol rocket syntax in file ( :symbol => value -> symbol: value )
+nmap <silent> <leader>rs :%s/\v:([a-z\-_\?\!]+)(\s+)\=\>/\1:\2/g<CR>
+" Replace tabs with 2 spaces
+nmap <silent> <leader>rt :%s/\v\t/  /g<CR>
+
 " -------
 " Commands
 " -------
-
-" Nerdtree alias
-command Tree NERDTree
 
 " Delete trailing whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
