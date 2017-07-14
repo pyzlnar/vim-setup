@@ -104,6 +104,13 @@ nmap <silent> <leader>rs :%s/\v:([a-z\-_\?\!]+)(\s+)\=\>/\1:\2/g<CR>
 " Replace tabs with 2 spaces
 nmap <silent> <leader>rt :%s/\v\t/  /g<CR>
 
+" Tabularize symbols
+nmap <silent> <leader><Tab>s :Tabularize /:\zs\s/l0<CR>
+" Tabularize equals
+nmap <silent> <leader><Tab>e :Tabularize /=/<CR>
+" Tabularize rockets
+nmap <silent> <leader><Tab>r :Tabularize /=>/<CR>
+
 " -------
 " Commands
 " -------
@@ -124,6 +131,10 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" Switch tab with tab!
+nmap <Tab> gt
+nmap <S-Tab> gT
 
 " -------------
 " Plugin Config
