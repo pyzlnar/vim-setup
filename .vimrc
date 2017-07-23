@@ -93,11 +93,11 @@ nore <Return> :
 
 let mapleader=','
 " Toggle line numbers
-nmap <silent> <leader>l  :set nu<CR>
-nmap <silent> <leader>ll :set nonu<CR>
+nmap <silent> <leader>l :set nu<CR>
+nmap <silent> <leader>L :set nonu<CR>
 
 " Open NERDTree of current directory
-nmap <silent> <leader>t  :NERDTree %:p:h<CR>
+nmap <silent> <leader>t :NERDTree %:p:h<CR>
 
 " Replace old symbol rocket syntax in file ( :symbol => value -> symbol: value )
 nmap <silent> <leader>rs :%s/\v:([a-z\-_\?\!]+)(\s+)\=\>/\1:\2/g<CR>
@@ -106,6 +106,8 @@ nmap <silent> <leader>rt :%s/\v\t/  /g<CR>
 
 " Tabularize symbols
 nmap <silent> <leader><Tab>s :Tabularize /:\zs\s/l0<CR>
+" Tabularize commas
+nmap <silent> <leader><Tab>c :Tabularize /,\zs\s/l0<CR>
 " Tabularize equals
 nmap <silent> <leader><Tab>e :Tabularize /=/<CR>
 " Tabularize rockets
