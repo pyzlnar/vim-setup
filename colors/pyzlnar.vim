@@ -24,7 +24,7 @@ hi Normal          ctermfg=007     ctermbg=none   cterm=none
 hi Cursor          ctermfg=none    ctermbg=red    cterm=none
 hi CursorLine      ctermfg=none    ctermbg=none   cterm=underline
 hi LineNr          ctermfg=002     ctermbg=none   cterm=none
-hi CursorLineNR    ctermfg=none    ctermbg=red    cterm=none
+hi CursorLineNR    ctermfg=128     ctermbg=none   cterm=bold
 
 " -----------------
 " - Number column -
@@ -39,9 +39,9 @@ hi Folded          ctermfg=002     ctermbg=none   cterm=none
 " -------------------------
 hi VertSplit       ctermfg=none    ctermbg=none   cterm=none
 hi ColorColumn     ctermfg=none    ctermbg=024    cterm=none
-hi TabLine         ctermfg=128     ctermbg=none   cterm=none
+hi TabLine         ctermfg=002     ctermbg=none   cterm=bold
 hi TabLineFill     ctermfg=none    ctermbg=none   cterm=none
-hi TabLineSel      ctermfg=002     ctermbg=none   cterm=bold
+hi TabLineSel      ctermfg=128     ctermbg=none   cterm=none
 
 " -------------------------------
 " - File Navigation / Searching -

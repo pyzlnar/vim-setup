@@ -93,8 +93,8 @@ nore <Return> :
 
 let mapleader=','
 " Toggle line numbers
-nmap <silent> <leader>l :set nu<CR>
-nmap <silent> <leader>L :set nonu<CR>
+nmap <silent> <leader>l :call ToggleLineNumbers()<CR>
+nmap <silent> <leader>L :set nonu<CR> :set nornu<CR>
 
 " Open NERDTree of current directory
 nmap <silent> <leader>t :NERDTree %:p:h<CR>
@@ -154,3 +154,17 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" ---------
+" Functions
+" ---------
+
+function ToggleLineNumbers()
+  if &nu == 0
+    set nu
+  elseif &rnu == 0
+    set rnu
+  else
+    set nornu
+  endif
+endfunction
