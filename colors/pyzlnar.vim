@@ -39,9 +39,9 @@ hi Folded          ctermfg=002     ctermbg=none   cterm=none
 " -------------------------
 hi VertSplit       ctermfg=none    ctermbg=none   cterm=none
 hi ColorColumn     ctermfg=none    ctermbg=024    cterm=none
-hi TabLine         ctermfg=002     ctermbg=none   cterm=bold
+hi TabLine         ctermfg=002     ctermbg=none   cterm=none
 hi TabLineFill     ctermfg=none    ctermbg=none   cterm=none
-hi TabLineSel      ctermfg=128     ctermbg=none   cterm=none
+hi TabLineSel      ctermfg=128     ctermbg=none   cterm=bold
 
 " -------------------------------
 " - File Navigation / Searching -
