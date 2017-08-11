@@ -22,7 +22,7 @@ let g:colors_name="pyzlnar"
 " --------------------------------
 hi Normal          ctermfg=007     ctermbg=none   cterm=none
 hi Cursor          ctermfg=none    ctermbg=red    cterm=none
-hi CursorLine      ctermfg=none    ctermbg=none   cterm=underline
+hi CursorLine      ctermfg=none    ctermbg=none   cterm=none
 hi LineNr          ctermfg=002     ctermbg=none   cterm=none
 hi CursorLineNR    ctermfg=128     ctermbg=none   cterm=bold
 

@@ -94,7 +94,7 @@ nore <Return> :
 let mapleader=','
 " Toggle line numbers
 nmap <silent> <leader>l :call ToggleLineNumbers()<CR>
-nmap <silent> <leader>L :set nonu<CR> :set nornu<CR>
+nmap <silent> <leader>L :call HideLineNumbers()<CR>
 
 " Open NERDTree of current directory
 nmap <silent> <leader>t :NERDTree %:p:h<CR>
@@ -162,9 +162,17 @@ let g:syntastic_check_on_wq = 0
 function ToggleLineNumbers()
   if &nu == 0
     set nu
+    set rnu
+    set cul
   elseif &rnu == 0
     set rnu
   else
     set nornu
   endif
+endfunction
+
+function HideLineNumbers()
+  set nonu
+  set nornu
+  set nocul
 endfunction
