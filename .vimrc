@@ -101,6 +101,8 @@ nmap <silent> <leader>t :NERDTree %:p:h<CR>
 
 " Replace old symbol rocket syntax in file ( :symbol => value -> symbol: value )
 nmap <silent> <leader>rs :%s/\v:([a-z\-_\?\!]+)(\s+)\=\>/\1:\2/g<CR>
+" Replace literals syntax from %i() to %i[]
+nmap <silent> <leader>rl :%s/\v\%([wi]\s*)\((\_.{-})\)/%\1[\2]/g<CR>
 " Replace tabs with 2 spaces
 nmap <silent> <leader>rt :%s/\v\t/  /g<CR>
 
