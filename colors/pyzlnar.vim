@@ -105,7 +105,7 @@ hi Comment         ctermfg=243     ctermbg=none   cterm=none
 
 hi Special         ctermfg=160     ctermbg=none   cterm=none
 hi SpecialChar     ctermfg=none    ctermbg=red    cterm=none
-hi Tag             ctermfg=none    ctermbg=red   cterm=none
+hi Tag             ctermfg=none    ctermbg=red    cterm=none
 hi Delimiter       ctermfg=160     ctermbg=none   cterm=none
 hi SpecialComment  ctermfg=none    ctermbg=red    cterm=none
 hi Debug           ctermfg=none    ctermbg=red    cterm=none
