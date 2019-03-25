@@ -117,6 +117,9 @@ map <C-l> <C-W>l
 nmap <Tab> gt
 nmap <S-Tab> gT
 
+" Displays the highlight info of the word under cursor
+map <F10> :call HighlightInfo()<CR>
+
 " ---------------
 " Leader Mappings
 " ---------------
@@ -214,4 +217,12 @@ function HideLineNumbers()
   set nonu
   set nornu
   set nocul
+endfunction
+
+" https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
+function HighlightInfo()
+  let hi = synIDattr(synID(line('.'),col('.'),1),'name')
+  let tr = synIDattr(synID(line('.'),col('.'),0),'name')
+  let lo = synIDattr(synIDtrans(synID(line('.'),col('.'),1)),'name')
+  echo 'hi<' . hi . '> trans<' . tr . '> lo<' . lo . '>'
 endfunction

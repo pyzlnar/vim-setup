@@ -148,6 +148,8 @@ hi SpellCap        ctermfg=015     ctermbg=130    cterm=none
 hi SpellLocal      ctermfg=015     ctermbg=064    cterm=none
 hi SpellRare       ctermfg=015     ctermbg=063    cterm=none
 
-"--------------------------------------------------------------------
-" Specific settings                                                 |
-"--------------------------------------------------------------------
+" --------------------------------
+" Lang Specific
+" --------------------------------
+
+source ~/.vim/colors/_pzlang.vim
