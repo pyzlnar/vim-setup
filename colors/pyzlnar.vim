@@ -30,8 +30,8 @@ hi CursorLineNR    ctermfg=128     ctermbg=none   cterm=bold
 " - Number column -
 " -----------------
 hi CursorColumn    ctermfg=none    ctermbg=red    cterm=none
+hi SignColumn      ctermfg=002     ctermbg=008    cterm=none
 hi FoldColumn      ctermfg=002     ctermbg=none   cterm=none
-hi SignColumn      ctermfg=002     ctermbg=none   cterm=none
 hi Folded          ctermfg=002     ctermbg=none   cterm=none
 
 " -------------------------

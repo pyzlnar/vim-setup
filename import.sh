@@ -4,7 +4,9 @@
 # I just tend forget the actual path of the file
 
 echo Copying .vimrc
-cp .vimrc ~/
+cp ~/.vimrc .
 
 echo Copying Schema Colors...
 cp ~/.vim/colors/* colors
+
+echo Done!

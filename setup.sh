@@ -27,4 +27,4 @@ else
 fi
 
 echo Installing Plugins...
-vim +PluginInstall +qall
+vim +PluginClean! +PluginInstall! +qall

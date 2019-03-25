@@ -25,20 +25,20 @@ Plugin 'VundleVim/Vundle.vim'
 " Git
 Plugin 'tpope/vim-fugitive'
 " Utils
-Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-syntastic/syntastic'
 " Highlighting
+Plugin 'StanAngeloff/php.vim'
 Plugin 'asciidoc/vim-asciidoc'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'isRuslan/vim-es6'
 Plugin 'mxw/vim-jsx'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
-Plugin 'StanAngeloff/php.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
 call vundle#end()
 
 " --
@@ -136,20 +136,6 @@ nmap <silent><leader>d :redraw!<CR>
 nmap <silent><leader>o o<Esc>k
 " O but stays in normal mode
 nmap <silent><leader>O O<Esc>j
-
-" Loc
-" ---
-
-" Open Loc
-nmap <silent><leader>mk :lopen<CR>
-" Close Loc
-nmap <silent><leader>mK :lclose<CR>
-" Go to current item
-nmap <silent><leader>mm :ll<CR>
-" Go to prev item
-nmap <silent><leader>mN :lprev<CR>
-" Go to next item
-nmap <silent><leader>mn :lnext<CR>
 
 " Replace
 " -------
