@@ -70,6 +70,10 @@ set noswapfile
 filetype indent on
 filetype plugin on
 
+" More filetype for crontabs
+au BufNewFile,BufRead *.cron    set filetype=crontab
+au BufNewFile,BufRead *.crontab set filetype=crontab
+
 " More filetypes for ruby
 au BufNewFile,BufRead Gemfile set filetype=ruby
 au BufNewFile,BufRead *.prawn set filetype=ruby

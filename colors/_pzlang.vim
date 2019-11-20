@@ -10,5 +10,6 @@
 "----------------------------------------------------------------
 " Ruby
 "----------------------------------------------------------------
-hi rubyAssertion   ctermfg=013     ctermbg=none   cterm=none
+hi rubyAssertion   ctermfg=006     ctermbg=none   cterm=bold
 hi rubyInclude     ctermfg=006     ctermbg=none   cterm=none
+hi rubyTestMacro   ctermfg=006     ctermbg=none   cterm=bold

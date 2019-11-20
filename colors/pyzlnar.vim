@@ -56,7 +56,7 @@ hi IncSearch       ctermfg=none    ctermbg=red    cterm=none
 hi StatusLine      ctermfg=002     ctermbg=none   cterm=none
 hi StatusLineNC    ctermfg=128     ctermbg=none   cterm=none
 hi WildMenu        ctermfg=none    ctermbg=red    cterm=none
-hi Question        ctermfg=none    ctermbg=red    cterm=none
+hi Question        ctermfg=001     ctermbg=none   cterm=none
 hi Title           ctermfg=023     ctermbg=none   cterm=none
 hi ModeMsg         ctermfg=002     ctermbg=none   cterm=none
 hi MoreMsg         ctermfg=none    ctermbg=red    cterm=none
@@ -69,13 +69,13 @@ hi Visual          ctermfg=none    ctermbg=240    cterm=none
 hi VisualNOS       ctermfg=none    ctermbg=red    cterm=none
 hi NonText         ctermfg=002     ctermbg=none   cterm=none
 
-hi Todo            ctermfg=008     ctermbg=012    cterm=bold
+hi Todo            ctermfg=007     ctermbg=012    cterm=bold
 hi Underlined      ctermfg=none    ctermbg=red    cterm=none
 hi Error           ctermfg=001     ctermbg=none   cterm=none
 hi ErrorMsg        ctermfg=001     ctermbg=none   cterm=none
 hi WarningMsg      ctermfg=166     ctermbg=none   cterm=none
 hi Ignore          ctermfg=243     ctermbg=none   cterm=none
-hi SpecialKey      ctermfg=none    ctermbg=red    cterm=none
+hi SpecialKey      ctermfg=166     ctermbg=none   cterm=bold
 
 " --------------------------------
 " Variable types
@@ -96,7 +96,7 @@ hi Function        ctermfg=006     ctermbg=none   cterm=bold
 " --------------------------------
 hi Statement       ctermfg=178     ctermbg=none   cterm=none
 hi Conditional     ctermfg=166     ctermbg=none   cterm=none
-hi Repeat          ctermfg=none    ctermbg=red    cterm=none
+hi Repeat          ctermfg=166     ctermbg=none   cterm=none
 hi Label           ctermfg=166     ctermbg=none   cterm=none
 hi Operator        ctermfg=024     ctermbg=none   cterm=none
 hi Keyword         ctermfg=178     ctermbg=none   cterm=none
@@ -105,9 +105,9 @@ hi Comment         ctermfg=243     ctermbg=none   cterm=none
 
 hi Special         ctermfg=160     ctermbg=none   cterm=none
 hi SpecialChar     ctermfg=none    ctermbg=red    cterm=none
-hi Tag             ctermfg=none    ctermbg=red    cterm=none
+hi Tag             ctermfg=002     ctermbg=none   cterm=none
 hi Delimiter       ctermfg=160     ctermbg=none   cterm=none
-hi SpecialComment  ctermfg=none    ctermbg=red    cterm=none
+hi SpecialComment  ctermfg=007     ctermbg=012    cterm=bold
 hi Debug           ctermfg=none    ctermbg=red    cterm=none
 
 " ----------
