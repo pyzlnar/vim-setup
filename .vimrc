@@ -176,6 +176,13 @@ nmap <silent><leader><Tab>r :Tabularize /=>/<CR>
 " Add jsx highlight to .js files
 let g:jsx_ext_required = 0
 
+" Omnifunc
+" --------
+
+" Disables autocompletion on Ctrl+C for sql files
+let g:omni_sql_no_default_maps = 1
+
+
 " Syntastic
 " ---------
 
