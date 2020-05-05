@@ -170,18 +170,11 @@ nmap <silent><leader><Tab>r :Tabularize /=>/<CR>
 " Plugin Config
 " -------------
 
-" Vim ES6
-" -------
-
-" Add jsx highlight to .js files
-let g:jsx_ext_required = 0
-
 " Omnifunc
 " --------
 
 " Disables autocompletion on Ctrl+C for sql files
 let g:omni_sql_no_default_maps = 1
-
 
 " Syntastic
 " ---------
@@ -207,6 +200,32 @@ let g:syntastic_ruby_mri_quiet_messages  = { 'level': 'warnings', 'type': 'style
 " Change ruby check to rubocop (default mri)
 " I find it slow and prefer to run it manually, not from vim
 " let g:syntastic_ruby_checkers=['rubocop']
+
+" Vim ES6
+" -------
+
+" Add jsx highlight to .js files
+let g:jsx_ext_required = 0
+
+" Vim Rails
+" ---------
+
+" Adds :xService and :xTest commands to vim
+" vim-rails allegedly has test out of the box but it was not working for some
+" reason.
+let g:rails_projections = {
+      \  "app/services/*.rb": {
+      \    "template": ["class {camelcase|capitalize|colons}", "end"],
+      \    "type": "service"
+      \  },
+      \  "test/*_test.rb": {
+      \    "template": [
+      \      "class {camelcase|capitalize|colons}Test < ActiveSupport::TestCase",
+      \      "end"
+      \    ],
+      \    "type": "test"
+      \  }
+      \}
 
 " ---------
 " Functions
