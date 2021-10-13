@@ -190,7 +190,10 @@ let g:syntastic_check_on_wq              = 0
 " Populates the loc list when run
 let g:syntastic_always_populate_loc_list = 1
 " Silences style and warnings from mri (Rubocop checks those)
-let g:syntastic_ruby_mri_quiet_messages  = { 'level': 'warnings', 'type': 'style' }
+let g:syntastic_ruby_exec               = 'ruby2.7.1'
+let g:syntastic_ruby_mri_quiet_messages = { 'level': 'warnings', 'type': 'style' }
+" Disable for Latex
+let g:syntastic_tex_checkers=['']
 
 " Unused configs
 "
@@ -200,6 +203,7 @@ let g:syntastic_ruby_mri_quiet_messages  = { 'level': 'warnings', 'type': 'style
 " Change ruby check to rubocop (default mri)
 " I find it slow and prefer to run it manually, not from vim
 " let g:syntastic_ruby_checkers=['rubocop']
+"
 
 " Vim ES6
 " -------
@@ -220,6 +224,8 @@ let g:rails_projections = {
       \  },
       \  "test/*_test.rb": {
       \    "template": [
+      \      "require 'test_helper",
+      \      "",
       \      "class {camelcase|capitalize|colons}Test < ActiveSupport::TestCase",
       \      "end"
       \    ],
