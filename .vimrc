@@ -30,6 +30,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-syntastic/syntastic'
+" Project & Navigation
+Plugin 'tpope/vim-projectionist'
 " Highlighting
 Plugin 'StanAngeloff/php.vim'
 Plugin 'asciidoc/vim-asciidoc'
@@ -77,6 +79,9 @@ au BufNewFile,BufRead *.crontab set filetype=crontab
 " More filetypes for ruby
 au BufNewFile,BufRead Gemfile set filetype=ruby
 au BufNewFile,BufRead *.prawn set filetype=ruby
+
+" More filetypes for slim
+au BufNewFile,BufRead *.slime set filetype=slim
 
 " Four space indent in php
 au FileType php setl sw=4 sts=4 et
@@ -165,6 +170,12 @@ nmap <silent><leader><Tab>c :Tabularize /,\zs\s/l0<CR>
 nmap <silent><leader><Tab>e :Tabularize /=/<CR>
 " Tabularize rockets
 nmap <silent><leader><Tab>r :Tabularize /=>/<CR>
+" Tabularize do:
+nmap <silent><leader><Tab>d :Tabularize /do:/<CR>
+" Tabularize front arrow ->
+nmap <silent><leader><Tab>a :Tabularize /->/<CR>
+" Tabularize back  arrow <-
+nmap <silent><leader><Tab>A :Tabularize /<-/<CR>
 
 " -------------
 " Plugin Config
