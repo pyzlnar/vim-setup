@@ -35,9 +35,11 @@ Plugin 'tpope/vim-projectionist'
 " Highlighting
 Plugin 'StanAngeloff/php.vim'
 Plugin 'asciidoc/vim-asciidoc'
-Plugin 'elixir-lang/vim-elixir'
+Plugin 'jvirtanen/vim-hcl'
+Plugin 'elixir-editors/vim-elixir'
 Plugin 'isRuslan/vim-es6'
 Plugin 'mxw/vim-jsx'
+Plugin 'jparise/vim-graphql'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
@@ -79,6 +81,10 @@ au BufNewFile,BufRead *.crontab set filetype=crontab
 " More filetypes for ruby
 au BufNewFile,BufRead Gemfile set filetype=ruby
 au BufNewFile,BufRead *.prawn set filetype=ruby
+
+" More filetypes for elixir
+au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
+au BufRead,BufNewFile mix.lock set filetype=elixir
 
 " More filetypes for slim
 au BufNewFile,BufRead *.slime set filetype=slim
@@ -144,6 +150,8 @@ nmap <silent><leader>t :NERDTree %:p:h<CR>
 
 " Force redraw
 nmap <silent><leader>d :redraw!<CR>
+" Duplicate tab
+nmap <silent><leader>s :tab split<CR>
 " o but stays in normal mode
 nmap <silent><leader>o o<Esc>k
 " O but stays in normal mode
@@ -175,7 +183,7 @@ nmap <silent><leader><Tab>d :Tabularize /do:/<CR>
 " Tabularize front arrow ->
 nmap <silent><leader><Tab>a :Tabularize /->/<CR>
 " Tabularize back  arrow <-
-nmap <silent><leader><Tab>A :Tabularize /<-/<CR>
+nmap <silent><leader><Tab>b :Tabularize /<-/<CR>
 
 " -------------
 " Plugin Config

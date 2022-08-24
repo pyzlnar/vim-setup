@@ -13,3 +13,8 @@
 hi rubyAssertion   ctermfg=006     ctermbg=none   cterm=bold
 hi rubyInclude     ctermfg=006     ctermbg=none   cterm=none
 hi rubyTestMacro   ctermfg=006     ctermbg=none   cterm=bold
+
+"----------------------------------------------------------------
+" HCL
+"----------------------------------------------------------------
+hi hclBlockName    ctermfg=178     ctermbg=none   cterm=none
