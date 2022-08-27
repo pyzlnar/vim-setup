@@ -74,6 +74,9 @@ set noswapfile
 filetype indent on
 filetype plugin on
 
+" More filetypes for bash
+au BufNewFile,BufRead bash_osx set filetype=bash
+
 " More filetype for crontabs
 au BufNewFile,BufRead *.cron    set filetype=crontab
 au BufNewFile,BufRead *.crontab set filetype=crontab

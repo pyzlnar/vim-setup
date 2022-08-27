@@ -121,7 +121,7 @@ hi PreCondit       ctermfg=none    ctermbg=red    cterm=none
 
 hi Type            ctermfg=061     ctermbg=none   cterm=none
 hi StorageClass    ctermfg=034     ctermbg=none   cterm=none
-hi Structure       ctermfg=none    ctermbg=red    cterm=none
+hi Structure       ctermfg=013     ctermbg=none   cterm=none
 hi Typedef         ctermfg=none    ctermbg=red    cterm=none
 
 " --------------------------------
